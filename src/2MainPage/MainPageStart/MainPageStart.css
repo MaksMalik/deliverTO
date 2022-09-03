@@ -1,0 +1,63 @@
+.mainPageStart {
+  height: 65vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  box-shadow:
+    inset 0px 11px 8px -10px rgb(0, 0, 0),
+    inset 0px -11px 8px -10px rgb(0, 0, 0);
+}
+
+.mainPageStart-title {
+  font-family: raleway, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 54px;
+}
+
+.mainPageStart-getStarted {
+  background-color: #ff8c0c;
+  margin-top: 20px;
+  padding: 40px;
+  border-radius: 80px;
+  font: normal normal bold 44px Open Sans;
+  border-radius: 1000px;
+  padding:       20px 45px;
+}
+
+.mainPageStart-getStarted a {
+  text-decoration: none;
+  color: #ffffffe1;
+}
+
+.mainPageStart-getStarted:hover a {
+  background-color: #ff8800;
+  color: #ffffff;
+}
+
+.mainPageStart-image {
+  height: 450px;
+}
+
+@media only screen and (max-width: 600px) {
+  .mainPageStart {
+    flex-direction: column;
+  }
+
+  .mainPageStart-image {
+    height: 350px;
+  }
+
+  .mainPageStart-title {
+    font-size: 38px;
+    text-align: center;
+  }
+  
+  .mainPageStart-getStarted {
+    font-size: 30px;
+    text-align: center;
+  }
+
+
+}

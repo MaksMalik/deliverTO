@@ -11,11 +11,11 @@
   display: flex;
   font-weight: bold;
   padding-left: 10px;
-  font: normal normal bold 36px Open Sans;
+  font: normal normal bold 44px Open Sans;
 }
 
 .navbar-logo-deliver {
-  color: rgba(0, 0, 0, 0.534);
+  color: #ff8e0cd7;
 }
 
 .navbar-logo-to {
@@ -33,12 +33,12 @@
   padding: 40px;
   color: rgba(255, 255, 255, 0.726);
   transition-duration: 500ms;
-  font: normal normal bold 14px Open Sans;
+  font: normal normal bold 16px Open Sans;
 }
 
 .navbar-links-link:hover {
-  background-color: rgba(0, 0, 0, 0.233);
-  color: rgba(255, 255, 255, 0.884);
+  background-color: #ff8e0cda;
+  color: rgba(0, 0, 0, 0.884);
   transition-duration: 500ms;
 }
 
@@ -58,8 +58,8 @@
   }
 
   .navbar-links-link:hover {
-    background-color: rgba(0, 0, 0, 0.233);
-    color: rgba(255, 255, 255, 0.884);
+    background-color: #ff8e0cda;
+    color: rgba(0, 0, 0, 0.884);
     transition-duration: 500ms;
   }
 
