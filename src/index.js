@@ -8,9 +8,9 @@ import Footer from './3Footer/Footer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <>
+  <div className="landingPage">
     <NavBar></NavBar>
     <MainPage></MainPage>
     <Footer></Footer>
-  </>
+  </div>
 );
