@@ -17,7 +17,7 @@ function MainPageOffer() {
       <div className="offer-offers-mobile">
         {(offer === 1)
         ? (<div className="offer-offer-mobile">1</div>)
-        : (offer === 2) ? (<div className="offer-offer-mobile">2</div>) : (<div className="offer-offer-mobile">KUPKA Z DUPKA xD</div>)
+        : ((offer === 2) ? (<div className="offer-offer-mobile">2</div>) : (<div className="offer-offer-mobile">KUPKA Z DUPKA xD</div>))
         }
       </div>
 
