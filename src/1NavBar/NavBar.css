@@ -15,7 +15,7 @@
 }
 
 .navbar-logo-deliver {
-  color: #ff8e0cd7;
+  color: #f28b3b;
 }
 
 .navbar-logo-to {
@@ -37,7 +37,7 @@
 }
 
 .navbar-links-link:hover {
-  background-color: #ff8e0cda;
+  background-color: #f28b3b;
   color: rgba(0, 0, 0, 0.884);
   transition-duration: 500ms;
 }
@@ -58,7 +58,7 @@
   }
 
   .navbar-links-link:hover {
-    background-color: #ff8e0cda;
+    background-color: #f28b3b;
     color: rgba(0, 0, 0, 0.884);
     transition-duration: 500ms;
   }

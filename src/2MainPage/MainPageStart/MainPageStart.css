@@ -1,5 +1,5 @@
 .mainPageStart {
-  height: 65vh;
+  height: min-content;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -14,16 +14,19 @@
   font-weight: 700;
   font-style: normal;
   font-size: 54px;
+  color: #588ddd;
 }
 
 .mainPageStart-getStarted {
-  background-color: #ff8c0c;
+  background-color: #f28b3b;
   margin-top: 20px;
   padding: 40px;
   border-radius: 80px;
   font: normal normal bold 44px Open Sans;
   border-radius: 1000px;
   padding:       20px 45px;
+  cursor: pointer;
+
 }
 
 .mainPageStart-getStarted a {
@@ -32,12 +35,13 @@
 }
 
 .mainPageStart-getStarted:hover a {
-  background-color: #ff8800;
+  background-color: #f28b3b;
   color: #ffffff;
 }
 
 .mainPageStart-image {
-  height: 450px;
+  height: 500px;
+  padding: 100px 100px 50px 0;
 }
 
 @media only screen and (max-width: 600px) {
@@ -46,7 +50,8 @@
   }
 
   .mainPageStart-image {
-    height: 350px;
+    height: 250px;
+    padding: 50px 0px 0px 0;
   }
 
   .mainPageStart-title {
@@ -57,6 +62,7 @@
   .mainPageStart-getStarted {
     font-size: 30px;
     text-align: center;
+    margin-bottom: 80px;
   }
 
 
