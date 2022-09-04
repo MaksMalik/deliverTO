@@ -2,8 +2,9 @@ import React from 'react'
 import './WhyUs.css'
 
 function WhyUs() {
+
   return (
-    <div>
+    <div className="mainPage">
       <div className="mainPageWhyUs-dots">
         <div className="mainPageWhyUs-dot1"></div>
         <div className="mainPageWhyUs-dot2"></div>
@@ -16,26 +17,26 @@ function WhyUs() {
       <div className="mainPageWhyUs-statistics-box">
         <div className="mainPageWhyUs-statistics">
           <div className="mainPageWhyUs-statistics-time">
-            <i class="fa-solid fa-truck-fast icons"></i>
+            <i className="fa-solid fa-truck-fast icons"></i>
             <p>Lorem ipsum dolor sit amet</p>
           </div>
           <div className="mainPageWhyUs-statistics-perDay">
-            <i class="fa-solid fa-cubes icons"></i>
+            <i className="fa-solid fa-cubes icons"></i>
             <p>Over 15.000.000 packages total</p>
           </div>
         </div>
 
         <div className="mainPageWhyUs-statistics">
           <div className="mainPageWhyUs-statistics-weekends">
-            <i class="fa-solid fa-calendar-week icons"></i>
+            <i className="fa-solid fa-calendar-week icons"></i>
             <p>Deliver even on weekends</p>
           </div>
           <div className="mainPageWhyUs-statistics-time">
-            <i class="fa-solid fa-truck-fast icons"></i>
+            <i className="fa-solid fa-truck-fast icons"></i>
             <p>Max 2 days of delivery</p>
           </div>
           <div className="mainPageWhyUs-statistics-perDay">
-            <i class="fa-solid fa-cubes icons"></i>
+            <i className="fa-solid fa-cubes icons"></i>
             <p>Over 20.000 packages per day</p>
           </div>
         </div>

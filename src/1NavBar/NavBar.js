@@ -5,7 +5,7 @@ function NavBar() {
   return (
     <div className="navbar">
       <div className="navbar-logo">
-        <i class="fa-solid fa-cube "></i>
+        <i className="fa-solid fa-cube "></i>
         <p className="navbar-logo-deliver">deliver</p>
         <p className="navbar-logo-to">TO</p>
 

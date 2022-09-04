@@ -79,7 +79,7 @@
   }
 
   .mainPageStart-image {
-    height: 250px;
+    height: 350px;
     padding: 40px 0px 0px 0;
   }
 
@@ -92,5 +92,12 @@
     font-size: 26px;
     text-align: center;
     margin-bottom: 80px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mainPageStart-image {
+    height: 250px;
+    padding: 40px 0px 0px 0;
   }
 }
