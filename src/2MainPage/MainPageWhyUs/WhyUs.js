@@ -41,8 +41,9 @@ function WhyUs() {
         </div>
 
         <div className="mainPageWhyUs-arrow">
-          <a href="#Offer" className="fa-solid fa-arrow-down arrow"></a>
-          // eslint-disable-next-line no-console
+          <a href="#Offer">
+            <i className="fa-solid fa-arrow-down arrow"></i>
+          </a>
         </div>
       </div>
     </div>
