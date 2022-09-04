@@ -19,7 +19,6 @@ function MainPageOffer() {
         ? (<div className="offer-offer-mobile">1</div>)
         : (offer === 2) ? (<div className="offer-offer-mobile">2</div>) : (<div className="offer-offer-mobile">3</div>)
         }
-        {/* <div className="offer-offer3-mobile"></div> */}
       </div>
 
       <div className="offer-offers">
