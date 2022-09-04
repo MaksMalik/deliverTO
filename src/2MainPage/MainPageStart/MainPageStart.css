@@ -20,12 +20,13 @@
 .mainPageStart-getStarted {
   background-color: #f28b3b;
   margin-top: 20px;
-  padding: 40px;
+  padding: 20px;
   border-radius: 80px;
-  font: normal normal bold 44px Open Sans;
+  font: normal normal bold 38px Open Sans;
   border-radius: 1000px;
-  padding:       20px 45px;
   cursor: pointer;
+  text-align: center;
+  transition-duration: 500ms;
 
 }
 
@@ -34,9 +35,9 @@
   color: #ffffffe1;
 }
 
-.mainPageStart-getStarted:hover a {
-  background-color: #f28b3b;
-  color: #ffffff;
+.mainPageStart-getStarted:hover {
+  box-shadow:  0 0 4px 0px #000000;
+  transition-duration: 500ms;
 }
 
 .mainPageStart-image {
@@ -44,26 +45,52 @@
   padding: 100px 100px 50px 0;
 }
 
-@media only screen and (max-width: 600px) {
+
+@media only screen and (max-width: 1280px) {
+  .mainPageStart-image {
+    height: 350px;
+    padding: 50px 0px 50px 0;
+  }
+
+  .mainPageStart-title {
+    font-family: raleway, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 44px;
+    color: #588ddd;
+  }
+  
+  .mainPageStart-getStarted {
+    background-color: #f28b3b;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 80px;
+    font: normal normal bold 32px Open Sans;
+    border-radius: 1000px;
+    cursor: pointer;
+    text-align: center;
+  }
+}
+
+
+@media only screen and (max-width: 992px) {
   .mainPageStart {
     flex-direction: column;
   }
 
   .mainPageStart-image {
     height: 250px;
-    padding: 50px 0px 0px 0;
+    padding: 40px 0px 0px 0;
   }
 
   .mainPageStart-title {
-    font-size: 38px;
+    font-size: 32px;
     text-align: center;
   }
-  
+
   .mainPageStart-getStarted {
-    font-size: 30px;
+    font-size: 26px;
     text-align: center;
     margin-bottom: 80px;
   }
-
-
 }

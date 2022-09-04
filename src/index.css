@@ -2,3 +2,7 @@
   background-color: #588ddd;
   background-image: linear-gradient(160deg, #588ddd 0%, #689ff1  100%);
 }
+
+html {
+  scroll-behavior: smooth;
+}
