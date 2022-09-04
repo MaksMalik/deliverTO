@@ -46,7 +46,7 @@
 }
 
 
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 1300px) {
   .mainPageStart-image {
     height: 350px;
     padding: 50px 0px 50px 0;
@@ -79,12 +79,12 @@
   }
 
   .mainPageStart-image {
-    height: 250px;
+    height: 400px;
     padding: 40px 0px 0px 0;
   }
 
   .mainPageStart-title {
-    font-size: 32px;
+    font-size: 42px;
     text-align: center;
   }
 
