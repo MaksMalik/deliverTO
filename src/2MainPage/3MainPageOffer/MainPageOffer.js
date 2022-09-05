@@ -23,8 +23,13 @@ function MainPageOffer() {
 
       <div className="offer-offers">
         <div className="offer-offer1"></div>
-        <div className="offer-offer2"></div>
-        <div className="offer-offer3"></div>
+        <div className="offer-offer1">
+          <div>
+            asdads
+          </div>
+          <i class="fa-solid fa-ranking-star"></i>
+        </div>
+        <div className="offer-offer1"></div>
       </div>
     </div>
   )
