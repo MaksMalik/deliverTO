@@ -16,21 +16,35 @@ function MainPageOffer() {
 
       <div className="offer-offers-mobile">
         {(offer === 1)
-        ? (<div className="offer-offer-mobile">1</div>)
-        : ((offer === 2) ? (<div className="offer-offer-mobile">2</div>) : (<div className="offer-offer-mobile">KUPKA Z DUPKA xD</div>))
+          ? (<div className="offer-offer-mobile">1</div>)
+          : ((offer === 2) 
+            ? (<div className="offer-offer-mobile">2</div>) 
+            : (<div className="offer-offer-mobile">KUPKA Z DUPKA xD</div>))
         }
       </div>
 
       <div className="offer-offers">
-        <div className="offer-offer1"></div>
+        <div className="offer-offer1">
+        <div>
+            Standard
+          </div>
+        </div>
         <div className="offer-offer1">
           <div>
-            asdads
+            Premium
           </div>
-          <i class="fa-solid fa-ranking-star"></i>
         </div>
-        <div className="offer-offer1"></div>
+        <div className="offer-offer1">
+        <div>
+            Unlimited
+          </div>
+        </div>
       </div>
+        <div className="offer-arrow">
+          <a href="#Offer">
+            <i className="fa-solid fa-arrow-down arrow"></i>
+          </a>
+        </div>
     </div>
   )
 }
