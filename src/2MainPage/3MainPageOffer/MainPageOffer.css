@@ -23,7 +23,7 @@
   flex-direction: column;
   justify-content:center;
   align-items: center;
-  height: 560px;
+  height: 520px;
   width: 300px;
   background-color: rgba(0, 0, 0, 0.295);
   margin: 80px 10px 0 10px;
@@ -32,7 +32,7 @@
 }
 
 .offer-offer1:hover {
-  height: 580px;
+  height: 540px;
   box-shadow:  0px 0px 4px 1px #000000c4;
   background-color: rgba(0, 0, 0, 0.37);
   margin: 60px 10px 0 10px;

@@ -41,7 +41,7 @@ function MainPageOffer() {
         </div>
       </div>
         <div className="offer-arrow">
-          <a href="#Offer">
+          <a href="#Contact">
             <i className="fa-solid fa-arrow-down arrow"></i>
           </a>
         </div>

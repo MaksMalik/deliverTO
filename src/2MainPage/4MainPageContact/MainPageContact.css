@@ -7,6 +7,7 @@
   align-items: center;
   justify-content: center;
   background-color: white;
+  padding: 0 0 50px 0;
   box-shadow:
     inset 0px 11px 8px -10px rgb(0, 0, 0),
     inset 0px -11px 8px -10px rgb(0, 0, 0);
@@ -15,4 +16,26 @@
 .mainPageContact-title {
   font: normal normal bold 56px Open Sans;
   color: #588ddd;
+  margin: 40px 0 50px 0;
+}
+
+.mainPageContact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: space-around;
+  height: 400px;
+  width:600px
+}
+
+@media only screen and (max-width: 640px) {
+  .mainPageContact-form {
+    width:400px
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .mainPageContact-form {
+    width:300px
+  }
 }
