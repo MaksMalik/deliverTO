@@ -28,6 +28,13 @@
   width:600px
 }
 
+.button-send {
+  min-height: 60px;
+  font: bold 16px Open Sans !important;
+
+}
+
+
 @media only screen and (max-width: 640px) {
   .mainPageContact-form {
     width:400px

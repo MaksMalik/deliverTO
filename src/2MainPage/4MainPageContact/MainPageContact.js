@@ -26,7 +26,7 @@ function mainPageContact() {
             multiline
             rows={6}
           />
-          <Button variant="contained">Send</Button>
+          <Button variant="contained" className="button-send">Send</Button>
         </div>
       </div>
     </div>
