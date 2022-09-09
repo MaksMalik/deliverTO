@@ -1,7 +1,6 @@
 import React from 'react'
 import './MainPageContact.css'
-import Button from '@mui/material/Button';
-import TextField from '@mui/material/Textfield';
+import { TextField, Button } from '@mui/material';
 
 
 
