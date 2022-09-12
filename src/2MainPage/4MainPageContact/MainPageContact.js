@@ -4,9 +4,7 @@ import { TextField, Button, InputLabel, MenuItem, Select, FormControl } from '@m
 
 
 
-function MainPageContact() {
-
-
+function MainPageContact({packages, setPackages}) {
 
   return (
     <div>
@@ -28,6 +26,8 @@ function MainPageContact() {
                 labelId="demo-simple-select-label"
                 id="demo-simple-select"
                 label="Package"
+                value={packages}
+                onChange={event => setPackages(event.target.value)}
               >
                 <MenuItem value={1}>Standard</MenuItem>
                 <MenuItem value={2}>Premium</MenuItem>

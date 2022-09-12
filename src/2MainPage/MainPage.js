@@ -3,7 +3,6 @@ import './MainPage.css'
 import MainPageStart from './1MainPageStart/MainPageStart'
 import WhyUs from './2MainPageWhyUs/WhyUs'
 import MainPageOffer from './3MainPageOffer/MainPageOffer'
-import MainPageContact from './4MainPageContact/MainPageContact'
 
 
 function MainPage() {
@@ -12,7 +11,6 @@ function MainPage() {
       <MainPageStart></MainPageStart>
       <WhyUs></WhyUs>
       <MainPageOffer></MainPageOffer>
-      <MainPageContact></MainPageContact>
     </div>
   )
 }

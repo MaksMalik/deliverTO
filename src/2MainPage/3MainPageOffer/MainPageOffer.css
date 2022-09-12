@@ -30,8 +30,9 @@
   border-radius: 15px;
   transition-duration: 500ms;
   font: normal normal bold 20px Open Sans;
-  color: rgba(0, 0, , 0.644);
+  color: rgba(0, 0, 1, 0.842);
   opacity: 0.8;
+  cursor: pointer;
 }
 
 .offer-offer1:hover {
@@ -156,7 +157,7 @@
     justify-content: center;
     flex-direction: column;
     font: normal normal bold 20px Open Sans;
-    color: rgba(0, 0, , 0.644);
+    color: rgba(0, 0, 0, 0.76);
     opacity: 0.8;
   }
 }
