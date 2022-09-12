@@ -21,7 +21,7 @@
 .offer-offer1 {
   display: flex;
   flex-direction: column;
-  justify-content:center;
+  justify-content:space-around;
   align-items: center;
   height: 520px;
   width: 300px;
@@ -29,14 +29,35 @@
   margin: 80px 10px 0 10px;
   border-radius: 15px;
   transition-duration: 500ms;
+  font: normal normal bold 20px Open Sans;
+  color: rgba(0, 0, , 0.644);
+  opacity: 0.8;
 }
 
 .offer-offer1:hover {
   height: 540px;
   box-shadow:  0px 0px 4px 1px #000000c4;
-  background-color: rgba(0, 0, 0, 0.37);
   margin: 60px 10px 0 10px;
   transition-duration: 500ms;
+  color: rgb(0, 0, 0);
+  opacity: 1;
+
+
+}
+
+.fa-check {
+  color: rgba(0, 243, 0, 0.808);
+  padding: 0 0 25px 0;
+}
+
+.fa-xmark {
+  color: rgba(243, 0, 0, 0.808);
+  padding: 0 0 25px 0;
+}
+
+.nameOffer {
+  font: normal normal bold 28px Open Sans;
+  color: rgba(255, 255, 255, 0.747);
 }
 
 .offer-buttons {
@@ -123,20 +144,20 @@
     display: none;
   }
 
-  .offer-offers-mobile {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
   .offer-offer-mobile {
     display: block;
-    height: 600px;
+    height: 450px;
     width: 600px;
     background-color: rgba(0, 0, 0, 0.295);
     margin: 5px 10px 0 10px;
     border-radius: 0 0 15px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font: normal normal bold 20px Open Sans;
+    color: rgba(0, 0, , 0.644);
+    opacity: 0.8;
   }
 }
 
