@@ -92,7 +92,7 @@
   top: 5px;
 }
 
-@media only screen and (max-width: 980px) {
+/* @media only screen and (max-width: 660px) {
   .offer-offers {
     flex-direction: column;
   }
@@ -205,12 +205,18 @@
 
   .offer-offer-mobile {
     display: block;
-    height: 600px;
     width: 300px;
     background-color: rgba(0, 0, 0, 0.295);
     margin: 5px 10px 0 10px;
     border-radius: 0 0 15px 15px;
     padding: 0px 20px 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font: normal normal bold 20px Open Sans;
+    color: rgba(0, 0, 0, 0.76);
+    opacity: 0.8;
 
   }
-}
+} */

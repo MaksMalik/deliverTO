@@ -34,7 +34,7 @@ function MainPageOffer() {
 
         <div className="offer-offers-mobile">
           {(offer === 1)
-            ? (<div className="offer-offer-mobile" >
+            ? (<div className="offer-offer-mobile" onClick={packagesChangeStandard} >
               <div>
                 <div>
                   <i class="fa-solid fa-check"></i> Lorem ipsum
@@ -63,7 +63,7 @@ function MainPageOffer() {
               </div>
               </div>)
             : ((offer === 2)
-              ? (<div className="offer-offer-mobile">
+              ? (<div className="offer-offer-mobile" onClick={packagesChangePremium}>
                 <div>
                   <div>
                     <i class="fa-solid fa-check"></i> Lorem ipsum
@@ -91,7 +91,7 @@ function MainPageOffer() {
                   </div>
                 </div>
                 </div>)
-              : (<div className="offer-offer-mobile">
+              : (<div className="offer-offer-mobile" onClick={packagesChangeUnlimited}>
                 <div>
                   <div>
                     <i class="fa-solid fa-check"></i> Lorem ipsum
