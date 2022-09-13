@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './MainPageOffer.css'
 import MainPageContact from '../4MainPageContact/MainPageContact'
+import { Button } from '@mui/material'
 
 function MainPageOffer () {
   const [packages, setPackages] = useState(1)
@@ -57,6 +58,16 @@ function MainPageOffer () {
                 <i className='fa-solid fa-xmark'></i> Quisque ac
               </div>
             </div>
+            ;
+            <Button
+              variant='contained'
+              className='button-begin'
+              style={{
+                backgroundColor: '#f28b3b'
+              }}
+            >
+              Begin
+            </Button>
           </div>
           <div className='offer-offer1' onClick={packagesChangePremium}>
             <div className='nameOffer'>Premium</div>
@@ -87,6 +98,15 @@ function MainPageOffer () {
                 <i className='fa-solid fa-xmark'></i> Quisque ac
               </div>
             </div>
+            <Button
+              variant='contained'
+              className='button-begin'
+              style={{
+                backgroundColor: '#f28b3b'
+              }}
+            >
+              Begin
+            </Button>
           </div>
           <div className='offer-offer1' onClick={packagesChangeUnlimited}>
             <div className='nameOffer'>Unlimited</div>
@@ -117,6 +137,16 @@ function MainPageOffer () {
                 <i className='fa-solid fa-check'></i> Quisque ac
               </div>
             </div>
+            ;
+            <Button
+              variant='contained'
+              className='button-begin'
+              style={{
+                backgroundColor: '#f28b3b'
+              }}
+            >
+              Begin
+            </Button>
           </div>
         </div>
         <div className='offer-arrow'>
@@ -125,9 +155,10 @@ function MainPageOffer () {
           </a>
         </div>
       </div>
-      <MainPageContact packages={packages} setPackages={setPackages}>
-        {' '}
-      </MainPageContact>
+      <MainPageContact
+        packages={packages}
+        setPackages={setPackages}
+      ></MainPageContact>
     </>
   )
 }
