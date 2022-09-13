@@ -12,8 +12,8 @@ function MainPageContact({packages, setPackages}) {
         <div className="mainPageContactLeftTitle">Any questions?</div>
         <div className="mainPageContactLeftSubtitle">Write an email or call us</div>
         <div className="mainPageContactLeft-Contacts">
-          <div><i class="fa-solid fa-envelope"></i> info@deliverto.com</div>
-          <div><i class="fa-solid fa-phone"></i> 123 456 789</div>
+          <div className="pointer"><i class="fa-solid fa-envelope"></i> info@deliverto.com</div>
+          <div className="pointer"><i class="fa-solid fa-phone"></i> 123 456 789</div>
         </div>
       </div>
       <div className="mainPageContactRight">
