@@ -1,15 +1,22 @@
 import React from 'react'
 import './MainPageContact.css'
-import { TextField, Button, InputLabel, MenuItem, Select, FormControl } from '@mui/material';
+import { TextField, Button, InputLabel, MenuItem, Select, FormControl, FormGroup, FormControlLabel, Checkbox } from '@mui/material';
 
 
 
 function MainPageContact({packages, setPackages}) {
 
   return (
-    <div>
-      <div className="mainPageContact">
-        <div className="mainPageContact-title" id="Contact">Contact</div>
+    <div className="mainPageContact" id="Contact">
+      <div className="mainPageContactLeft">
+        <div className="mainPageContactLeftTitle">Any questions?</div>
+        <div className="mainPageContactLeftSubtitle">Write an email or call us</div>
+        <div className="mainPageContactLeft-Contacts">
+          <div><i class="fa-solid fa-envelope"></i> info@deliverto.com</div>
+          <div><i class="fa-solid fa-phone"></i> 123 456 789</div>
+        </div>
+      </div>
+      <div className="mainPageContactRight">
         <div className="mainPageContact-form">
           <TextField
             required
@@ -40,6 +47,9 @@ function MainPageContact({packages, setPackages}) {
             multiline
             rows={6}
           />
+          <FormGroup>
+            <FormControlLabel control={<Checkbox defaultChecked />} label="Lorem ipsum dolor sit amet, consectetur adipiscing elit." />
+          </FormGroup>
           <Button variant="contained" className="button-send">Send</Button>
         </div>
       </div>

@@ -135,6 +135,10 @@
     font: normal normal bold 30px Open Sans;
   }
 
+  .mainPageWhyUs-title {
+    padding: 0px 0 20px 0;
+  }
+
   .mainPageWhyUs-statistics-weekends {
     padding: 0 0 0 0;
     color: rgba(255, 255, 255, 0.767);
@@ -169,5 +173,17 @@
   .mainPageWhyUs-dot3 {
     width: 14px;
     height: 14px;
+  }
+
+  .icons {
+    color: #0000008f;
+    font-size: 60px;
+    padding: 0 0 10px 0;
+    transition-duration: 500ms;
+    margin: 50px 0 0 0 ;
+  }
+
+  .mainPageWhyUs-statistics {
+    font-size: 25px;
   }
 }

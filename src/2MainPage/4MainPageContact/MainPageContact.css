@@ -1,22 +1,53 @@
 .mainPageContact {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   height: min-content;
   display: flex;
-  align-items: center;
   justify-content: center;
   background-color: white;
-  padding: 0 0 50px 0;
+  padding: 50px 0 50px 0;
   box-shadow:
     inset 0px 11px 8px -10px rgb(0, 0, 0),
     inset 0px -11px 8px -10px rgb(0, 0, 0);
 }
 
-.mainPageContact-title {
-  font: normal normal bold 56px Open Sans;
+.mainPageContactLeft {
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+}
+
+.mainPageContactLeftTitle {
+  font: normal normal bold 50px Open Sans;
   color: #588ddd;
-  margin: 40px 0 50px 0;
+  padding: 10px 0 10px 0;
+}
+
+.mainPageContactLeftSubtitle{
+  font: 26px Open Sans;
+  padding: 10px 0 10px 0;
+}
+
+.mainPageContactLeft-Contacts {
+  display: flex;
+  padding: 20px 0 10px 0;
+  font: 18px Open Sans;
+  flex-direction: column;
+}
+
+.fa-envelope {
+  padding: 0px 0 20px 0;
+  color: #588ddd;
+
+}
+
+.fa-phone {
+  color: #588ddd;
+}
+
+.mainPageContactRight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .mainPageContact-form {
@@ -24,16 +55,34 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: space-around;
-  height: 450px;
+  height: 500px;
   width:600px
 }
 
 .button-send {
   min-height: 60px;
   font: bold 16px Open Sans !important;
-
 }
 
+@media only screen and (max-width: 1100px) {
+  .mainPageContact {
+    flex-direction: column;
+  }
+
+  .mainPageContactLeft {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0px;
+    margin-bottom: 30px;
+  }
+
+  .mainPageContactLeft-Contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
 @media only screen and (max-width: 640px) {
   .mainPageContact-form {
@@ -44,5 +93,15 @@
 @media only screen and (max-width: 440px) {
   .mainPageContact-form {
     width:300px
+  }
+  .mainPageContactLeftTitle {
+    font: normal normal bold 36px Open Sans;
+    color: #588ddd;
+    padding: 10px 0 10px 0;
+  }
+  
+  .mainPageContactLeftSubtitle{
+    font: 22px Open Sans;
+    padding: 10px 0 10px 0;
   }
 }
