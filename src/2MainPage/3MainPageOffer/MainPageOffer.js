@@ -58,7 +58,6 @@ function MainPageOffer () {
                 <i className='fa-solid fa-xmark'></i> Quisque ac
               </div>
             </div>
-            ;
             <Button
               variant='contained'
               className='button-begin'
@@ -137,7 +136,6 @@ function MainPageOffer () {
                 <i className='fa-solid fa-check'></i> Quisque ac
               </div>
             </div>
-            ;
             <Button
               variant='contained'
               className='button-begin'
