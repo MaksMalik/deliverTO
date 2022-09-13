@@ -38,10 +38,12 @@
 font-size: 40px;
 margin: 14px;
 cursor: pointer;
+transition-duration: 500ms;
 }
 
 .icon-footer:hover {
-  color: #00000071
+  color: #00000071;
+  transition-duration: 500ms;
 }
 
 @media only screen and (max-width: 1110px) {

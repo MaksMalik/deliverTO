@@ -20,3 +20,25 @@ html {
   background-color: #d4aa70;
   border-radius: 100px;
 }
+
+  /* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #588ddd #ffffff;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #588ddd;
+    border-radius: 0px;
+    border: 3px none #ffffff;
+  }
