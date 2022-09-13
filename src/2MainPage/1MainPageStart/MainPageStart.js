@@ -6,9 +6,9 @@ function MainPageStart () {
     <div className='mainPageStart'>
       <img
         className='mainPageStart-image'
-        src='https://i.ibb.co/MPxcVWS/5227.jpg'
+        src={require('./images/5227_20-min.jpg')}
         alt='Delivery men'
-      ></img>
+      />
 
       <div>
         <p className='mainPageStart-title'>Deliver with us</p>
