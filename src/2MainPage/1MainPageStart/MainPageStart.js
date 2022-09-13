@@ -6,7 +6,7 @@ function MainPageStart () {
     <div className='mainPageStart'>
       <img
         className='mainPageStart-image'
-        src='./images/5227.jpg'
+        src='https://i.ibb.co/MPxcVWS/5227.jpg'
         alt='Delivery men'
       ></img>
 
