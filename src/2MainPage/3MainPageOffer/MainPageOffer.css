@@ -24,25 +24,23 @@
   align-items: center;
   height: 520px;
   width: 300px;
-  background-color: rgba(0, 0, 0, 0.295);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.295) 0%, rgba(0, 44, 74, 0) 100%);
   margin: 40px 10px 10px 10px;
   border-radius: 8px;
   transition-duration: 500ms;
   font: 16px Open Sans;
-  color: rgba(0, 0, 1, 0.842);
-  opacity: 0.8;
+  color: rgb(0, 0, 1);
+  opacity: 0.7;
   cursor: pointer;
   padding: 40px 40px 0px 40px;
 }
 
 .offer-offer1:hover {
   height: 540px;
-  box-shadow:  0px 0px 4px 1px #000000c4;
   margin: 30px 10px 0 10px;
   transition-duration: 500ms;
   color: rgb(0, 0, 0);
   opacity: 1;
-  border-radius: 1px;
 }
 
 
@@ -58,7 +56,7 @@
 
 .nameOffer {
   font: normal normal bold 28px Open Sans;
-  color: rgba(255, 255, 255, 0.747);
+  color: rgba(255, 255, 255, 0.904);
 }
 
 .pricing {
@@ -97,7 +95,7 @@
   .offer-offer1 {
     margin: 40px 10px 0 10px;
     transition-duration: 500ms;
-    padding: 20px 0 20px 0;
+    padding: 20px 0 0px 0;
   }
 
   .offer-offer1:hover {
