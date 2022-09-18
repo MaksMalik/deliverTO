@@ -3,19 +3,22 @@ import './WhyUs.css'
 
 function WhyUs() {
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('showWhyUs');
-      } else {
-        entry.target.classList.remove('showWhyUs');
-      }
-    })
-  });
-  
-  const hiddenElements = document.querySelectorAll('section');
-  hiddenElements.forEach((el) => observer.observe(el))
+  const ref = React.useRef()
+  React.useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('showWhyUs');
+        } else {
+          entry.target.classList.remove('showWhyUs');
+        }
+      })
+    });
 
+    const hiddenElements = document.querySelectorAll('section');
+    hiddenElements.forEach((el) => observer.observe(el))
+  }, [ref]
+  )
   return (
     <div className="mainPage">
       <div className="mainPageWhyUs-dots">

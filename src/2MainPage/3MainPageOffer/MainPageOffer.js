@@ -24,24 +24,27 @@ function MainPageOffer () {
     return false
   }
 
-  const observerOffer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('showOffer');
-      } else {
-        entry.target.classList.remove('showOffer');
-      }
-    })
-  });
-  
-  const hiddenElements = document.querySelectorAll('section');
-  hiddenElements.forEach((el) => observerOffer.observe(el))
+  const ref = React.useRef()
+  React.useEffect(() => {
+    const observerOffer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('showOffer');
+        } else {
+          entry.target.classList.remove('showOffer');
+        }
+      })
+    });
 
+    const hiddenElements = document.querySelectorAll('section');
+    hiddenElements.forEach((el) => observerOffer.observe(el))
+    }, [ref]
+  )
 
   return (
     <>
       <div className='offer-box' id='Offer'>
-        <section className='offer-title hidden'>Offer</section>
+        <section className='offer-title hiddenOffer'>Offer</section>
         <div className='offer-offers'>
           <section className='offer-offer1 hiddenOffer' onClick={packagesChangeStandard}>
             <div className='nameOffer'>Standard</div>

@@ -8,10 +8,7 @@ function MainPageContact({packages, setPackages}) {
 
   const ref = React.useRef()
   React.useEffect(() => {
-
-  }, [ref]
-  )
-  const observerContact = new IntersectionObserver((entries) => {
+    const observerContact = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add('showContact');
@@ -21,8 +18,10 @@ function MainPageContact({packages, setPackages}) {
       })
     });
     const hiddenElements = document.querySelectorAll('section');
-  hiddenElements.forEach((el) => observerContact.observe(el))
-  
+    hiddenElements.forEach((el) => observerContact.observe(el))
+    }, [ref]
+  )
+
   return (
     <section className="mainPageContact" id="Contact">
       <section className="mainPageContactLeft hiddenContact">
