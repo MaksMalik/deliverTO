@@ -6,18 +6,21 @@ import { TextField, Button, InputLabel, MenuItem, Select, FormControl, FormGroup
 
 function MainPageContact({packages, setPackages}) {
 
+  const ref = React.useRef()
+  React.useEffect(() => {
   const observerContact = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('showContact');
-      } else {
-        entry.target.classList.remove('showContact');
-      }
-    })
-  });
-
-  const hiddenElements = document.querySelectorAll('section');
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('showContact');
+        } else {
+          entry.target.classList.remove('showContact');
+        }
+      })
+    });
+    const hiddenElements = document.querySelectorAll('section');
   hiddenElements.forEach((el) => observerContact.observe(el))
+  }, [ref]
+  )
 
   return (
     <section className="mainPageContact" id="Contact">
