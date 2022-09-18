@@ -6,34 +6,36 @@ import { TextField, Button, InputLabel, MenuItem, Select, FormControl, FormGroup
 
 function MainPageContact({packages, setPackages}) {
 
+
   const ref = React.useRef()
   React.useEffect(() => {
-    const observerContact = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('showContact');
-        } else {
-          entry.target.classList.remove('showContact');
-        }
+    const observerContact = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) entry.target.classList.add('showContact')
+        })
       })
-    });
-    const hiddenElements = document.querySelectorAll('section');
-    hiddenElements.forEach((el) => observerContact.observe(el))
-    }, [ref]
+
+    const hiddenElementsContact = document.querySelectorAll('.hiddenContact');
+    hiddenElementsContact.forEach((el) => {
+      observerContact.observe(el)
+    })
+  }, [ref]
   )
 
+
   return (
-    <section className="mainPageContact" id="Contact">
-      <section className="mainPageContactLeft hiddenContact">
-        <div className="mainPageContactLeftTitle">Any questions?</div>
-        <div className="mainPageContactLeftSubtitle">Write an email or call us</div>
-        <div className="mainPageContactLeft-Contacts">
-          <div className="pointer"><i className="fa-solid fa-envelope"></i> info@deliverto.com</div>
-          <div className="pointer"><i className="fa-solid fa-phone"></i> 123 456 789</div>
+    <div className="mainPageContact" id="Contact">
+      <div className="mainPageContactLeft">
+        <div className="mainPageContactLeftTitle hiddenContact">Any questions?</div>
+        <div className="mainPageContactLeftSubtitle hiddenContact">Write an email or call us</div>
+        <div className="mainPageContactLeft-Contacts hiddenContact">
+          <div className="pointer hiddenContact"><i className="fa-solid fa-envelope"></i> info@deliverto.com</div>
+          <div className="pointer hiddenContact"><i className="fa-solid fa-phone"></i> 123 456 789</div>
         </div>
-      </section>
-      <section className="mainPageContactRight hiddenContact">
-        <div className="mainPageContact-form">
+      </div>
+      <div className="mainPageContactRight hiddenContact">
+        <div className="mainPageContact-form hiddenContact">
           <TextField
             required
             id="outlined-required"
@@ -68,8 +70,8 @@ function MainPageContact({packages, setPackages}) {
           </FormGroup>
           <Button variant="contained" className="button-send">Send</Button>
         </div>
-      </section>
-    </section>
+      </div>
+    </div>
   )
 }
 

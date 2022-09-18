@@ -5,20 +5,21 @@ function WhyUs() {
 
   const ref = React.useRef()
   React.useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('showWhyUs');
-        } else {
-          entry.target.classList.remove('showWhyUs');
-        }
+    const observer = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) entry.target.classList.add('showWhyUs')
+        })
       })
-    });
 
-    const hiddenElements = document.querySelectorAll('section');
-    hiddenElements.forEach((el) => observer.observe(el))
+    const hiddenElementsWhyUs = document.querySelectorAll('.hiddenWhyUs');
+    hiddenElementsWhyUs.forEach((el) => {
+      observer.observe(el)
+    })
   }, [ref]
   )
+
+
   return (
     <div className="mainPage">
       <div className="mainPageWhyUs-dots">
@@ -27,40 +28,40 @@ function WhyUs() {
         <div className="mainPageWhyUs-dot3"></div>
       </div>
 
-      <section className="mainPageWhyUs hiddenWhyUs">
+      <div className="mainPageWhyUs hiddenWhyUs">
         <div className="mainPageWhyUs-title" id="WhyUs">Why us?</div>
-      </section>
+      </div>
       <div className="mainPageWhyUs-statistics-box">
         <div className="mainPageWhyUs-statistics ">
-          <section className="mainPageWhyUs-statistics-time hiddenWhyUs">
+          <div className="mainPageWhyUs-statistics-time hiddenWhyUs">
             <i className="fa-solid fa-truck-fast icons"></i>
             <p>Lorem ipsum dolor sit amet</p>
-          </section>
-          <section className="mainPageWhyUs-statistics-perDay hiddenWhyUs">
+          </div>
+          <div className="mainPageWhyUs-statistics-perDay hiddenWhyUs">
             <i className="fa-solid fa-cubes icons"></i>
             <p>Over 15.000.000 packages total</p>
-          </section>
+          </div>
         </div>
         <div className="mainPageWhyUs-statistics">
-          <section className="mainPageWhyUs-statistics-weekends hiddenWhyUs">
+          <div className="mainPageWhyUs-statistics-weekends hiddenWhyUs">
             <i className="fa-solid fa-calendar-week icons"></i>
             <p>Deliver even on weekends</p>
-          </section>
-          <section className="mainPageWhyUs-statistics-time hiddenWhyUs">
+          </div>
+          <div className="mainPageWhyUs-statistics-time hiddenWhyUs">
             <i className="fa-solid fa-truck-fast icons"></i>
             <p>Max 2 days of delivery</p>
-          </section>
-          <section className="mainPageWhyUs-statistics-perDay hiddenWhyUs">
+          </div>
+          <div className="mainPageWhyUs-statistics-perDay hiddenWhyUs">
             <i className="fa-solid fa-cubes icons"></i>
             <p>Over 20.000 packages per day</p>
-          </section>
+          </div>
         </div>
 
-        <section className="mainPageWhyUs-arrow hiddenWhyUs">
+        <div className="mainPageWhyUs-arrow hiddenWhyUs">
           <a href="#Offer">
             <i className="fa-solid fa-arrow-down arrow"></i>
           </a>
-        </section>
+        </div>
       </div>
     </div>
   )

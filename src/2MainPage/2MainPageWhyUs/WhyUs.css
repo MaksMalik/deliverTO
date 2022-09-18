@@ -135,7 +135,7 @@
   }
 
   .mainPageWhyUs-title {
-    padding: 0px 0 20px 0;
+    padding: 0px 50px 20px 50px;
   }
 
   .mainPageWhyUs-statistics-weekends {
@@ -188,7 +188,7 @@
 
   .hiddenWhyUs {
     opacity: 0;
-    filter: blur(2px);
+    filter: blur(5px);
     transition: all 1s;
     transform: translateX(-100%);
   }
@@ -202,11 +202,13 @@
 
 .hiddenWhyUs {
   opacity: 0;
-  filter: blur(2px);
+  filter: blur(5px);
   transition: all 1s;
+  transition-delay: 100ms;
 }
 
 .showWhyUs {
   opacity: 1;
   filter: blur(0);
+  transition-delay: 100ms;
 }

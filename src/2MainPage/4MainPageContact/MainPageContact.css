@@ -89,7 +89,7 @@
   
   .hiddenContact {
     opacity: 0;
-    filter: blur(2px);
+    filter: blur(5px);
     transition: all 1s;
     transform: translateX(-100%);
   }
@@ -126,11 +126,19 @@
 
 .hiddenContact {
   opacity: 0;
-  filter: blur(2px);
+  filter: blur(5px);
   transition: all 1s;
+  transition-delay: 100ms;
 }
 
 .showContact {
   opacity: 1;
   filter: blur(0);
+  transition-delay: 100ms;
+}
+
+@media(prefers-reduced-motion) {
+  .hiddenContact {
+    transition: none
+  }
 }
