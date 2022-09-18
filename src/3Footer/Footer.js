@@ -2,6 +2,7 @@ import React from 'react'
 import './Footer.css'
 
 function Footer() {
+
   return (
     <div className="footer">
       <div className="footer-upper">
@@ -14,8 +15,8 @@ function Footer() {
         </div>
 
         <div className="footer-right">
-          <i class="fa-brands fa-facebook icon-footer"></i>
-          <i class="fa-brands fa-twitter icon-footer"></i>
+          <i className="fa-brands fa-facebook icon-footer"></i>
+          <i className="fa-brands fa-twitter icon-footer"></i>
         </div>
       </div>
       <div className="footer-copyrights">

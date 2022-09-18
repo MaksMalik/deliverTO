@@ -24,7 +24,7 @@
   align-items: center;
   height: 520px;
   width: 300px;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.295) 0%, rgba(0, 44, 74, 0) 100%);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.295) 0%, rgba(0, 0, 0, 0.123) 100%);
   margin: 40px 10px 10px 10px;
   border-radius: 8px;
   transition-duration: 500ms;
@@ -91,7 +91,27 @@
   top: 17px;
 }
 
-@media only screen and (max-width: 660px) {
+@media only screen and (max-width: 810px) {
+  .offer-offers {
+    flex-direction: column;
+  }
+
+  .hiddenOffer {
+    opacity: 0;
+    filter: blur(2px);
+    transition: all 1s;
+    transform: translateX(-100%);
+  }
+
+  .showOffer {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+  }
+}
+
+@media only screen and (max-width: 450px) {
+
   .offer-offer1 {
     margin: 40px 10px 0 10px;
     transition-duration: 500ms;
@@ -103,4 +123,17 @@
   .offer-offer1:hover {
     margin: 20px 10px 0 10px;
   }
+
+
+}
+
+.hiddenOffer {
+  opacity: 0;
+  filter: blur(2px);
+  transition: all 1s;
+}
+
+.showOffer {
+  opacity: 1;
+  filter: blur(0);
 }

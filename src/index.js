@@ -6,7 +6,7 @@ import NavBar from './1NavBar/NavBar';
 import MainPage from './2MainPage/MainPage';
 import Footer from './3Footer/Footer';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+export const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <div className="landingPage">

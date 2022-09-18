@@ -6,6 +6,7 @@ import MainPageOffer from './3MainPageOffer/MainPageOffer'
 
 
 function MainPage() {
+  
   return (
     <div className="mainPage">
       <MainPageStart></MainPageStart>

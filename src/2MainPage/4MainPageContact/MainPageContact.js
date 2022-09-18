@@ -6,17 +6,30 @@ import { TextField, Button, InputLabel, MenuItem, Select, FormControl, FormGroup
 
 function MainPageContact({packages, setPackages}) {
 
+  const observerContact = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('showContact');
+      } else {
+        entry.target.classList.remove('showContact');
+      }
+    })
+  });
+
+  const hiddenElements = document.querySelectorAll('section');
+  hiddenElements.forEach((el) => observerContact.observe(el))
+
   return (
-    <div className="mainPageContact" id="Contact">
-      <div className="mainPageContactLeft">
+    <section className="mainPageContact" id="Contact">
+      <section className="mainPageContactLeft hiddenContact">
         <div className="mainPageContactLeftTitle">Any questions?</div>
         <div className="mainPageContactLeftSubtitle">Write an email or call us</div>
         <div className="mainPageContactLeft-Contacts">
-          <div className="pointer"><i class="fa-solid fa-envelope"></i> info@deliverto.com</div>
-          <div className="pointer"><i class="fa-solid fa-phone"></i> 123 456 789</div>
+          <div className="pointer"><i className="fa-solid fa-envelope"></i> info@deliverto.com</div>
+          <div className="pointer"><i className="fa-solid fa-phone"></i> 123 456 789</div>
         </div>
-      </div>
-      <div className="mainPageContactRight">
+      </section>
+      <section className="mainPageContactRight hiddenContact">
         <div className="mainPageContact-form">
           <TextField
             required
@@ -52,8 +65,8 @@ function MainPageContact({packages, setPackages}) {
           </FormGroup>
           <Button variant="contained" className="button-send">Send</Button>
         </div>
-      </div>
-    </div>
+      </section>
+    </section>
   )
 }
 

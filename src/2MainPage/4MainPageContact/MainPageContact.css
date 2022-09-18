@@ -85,6 +85,20 @@
     flex-direction: column;
     align-items: center;
   }
+
+  
+  .hiddenContact {
+    opacity: 0;
+    filter: blur(2px);
+    transition: all 1s;
+    transform: translateX(-100%);
+  }
+
+  .showContact {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+  }
 }
 
 @media only screen and (max-width: 640px) {
@@ -107,4 +121,16 @@
     font: 22px Open Sans;
     padding: 10px 0 10px 0;
   }
+}
+
+
+.hiddenContact {
+  opacity: 0;
+  filter: blur(2px);
+  transition: all 1s;
+}
+
+.showContact {
+  opacity: 1;
+  filter: blur(0);
 }

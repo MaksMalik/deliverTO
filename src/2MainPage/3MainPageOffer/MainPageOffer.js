@@ -24,12 +24,26 @@ function MainPageOffer () {
     return false
   }
 
+  const observerOffer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('showOffer');
+      } else {
+        entry.target.classList.remove('showOffer');
+      }
+    })
+  });
+  
+  const hiddenElements = document.querySelectorAll('section');
+  hiddenElements.forEach((el) => observerOffer.observe(el))
+
+
   return (
     <>
       <div className='offer-box' id='Offer'>
-        <div className='offer-title'>Offer</div>
+        <section className='offer-title hidden'>Offer</section>
         <div className='offer-offers'>
-          <div className='offer-offer1' onClick={packagesChangeStandard}>
+          <section className='offer-offer1 hiddenOffer' onClick={packagesChangeStandard}>
             <div className='nameOffer'>Standard</div>
             <div className='pricing'>$35</div>
             <div className='list'>
@@ -67,8 +81,8 @@ function MainPageOffer () {
             >
               Begin
             </Button>
-          </div>
-          <div className='offer-offer1' onClick={packagesChangePremium}>
+          </section>
+          <section className='offer-offer1 hiddenOffer' onClick={packagesChangePremium}>
             <div className='nameOffer'>Premium</div>
             <div className='pricing'>$55</div>
             <div className='list'>
@@ -106,8 +120,8 @@ function MainPageOffer () {
             >
               Begin
             </Button>
-          </div>
-          <div className='offer-offer1' onClick={packagesChangeUnlimited}>
+          </section>
+          <section className='offer-offer1 hiddenOffer' onClick={packagesChangeUnlimited}>
             <div className='nameOffer'>Unlimited</div>
             <div className='pricing'>$75</div>
             <div className='list'>
@@ -145,13 +159,13 @@ function MainPageOffer () {
             >
               Begin
             </Button>
-          </div>
+          </section>
         </div>
-        <div className='offer-arrow'>
+        <section className='offer-arrow hiddenOffer'>
           <a href='#Contact'>
             <i className='fa-solid fa-arrow-down arrow'></i>
           </a>
-        </div>
+        </section>
       </div>
       <MainPageContact
         packages={packages}
